@@ -1,0 +1,29 @@
+{
+    "name": "scaper",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "bin/scaper.js",
+    "bin": {
+        "scaper": "./bin/scaper.js"
+    },
+    "scripts": {},
+    "keywords": [
+        "cli"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "cheerio": "^1.0.0-rc.10",
+        "clear": "^0.1.0",
+        "commander": "^8.3.0",
+        "conf": "^10.0.3",
+        "esm": "^3.2.25",
+        "figlet": "^1.5.2",
+        "got": "^11.8.3",
+        "inquirer": "^8.2.0",
+        "minimist": "^1.2.5",
+        "turndown": "^7.1.1"
+    }
+}
