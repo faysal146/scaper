@@ -15,7 +15,12 @@ export default async ({ pageUrl, excludeItems, entrySelector }) => {
         itemToExclude.forEach(item => $(item).remove());
 
         const turndownService = new TurndownService();
-        return turndownService.turndown($(entrySelector).html());
+        const entryHtml = $(entrySelector).html();
+        if (!entryHtml) {
+            console.log('Your Enterd selector not found!');
+            process.exit(1);
+        }
+        return turndownService.turndown(entryHtml);
     } catch (err) {
         console.log(err);
     }
